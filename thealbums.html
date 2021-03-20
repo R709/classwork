@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <script>
+        function ShowMessage() {
+            alert("Choose any of your favourite albums");
+        }
+
+        function display(x) {
+            if (x == 1)
+                document.write("Good choice!,Yellow Submarine 1969 is your favourite!");
+            else if (x == 2)
+                document.write("Magical Mystery Tour(1967) is your favourite");
+            else if (x == 3)
+                document.write("Good Choice! Beatles for Sale (1964) is your favourite album!");
+            else if (x==4)
+                document.write("Wow! Abbey Road(1969) is your favourite album!");
+            else if (x == 5)
+                document.write("Splended! The Beatles(1968) is your favourite album!");
+            else if (x == 6)
+                document.write("WOAH! Help(1965) is your favourite album!");
+            else
+                document.write("Good Choice! Revolver(1966) is your favourite album!")
+        
+ 
+        }
+    </script>
+</head>
+<body style="background-color: ivory;">
+
+
+    <form>
+        <label style="font-style:unset; font-size:xx-large" ; for="Albums">Choose your favourite album:</label>
+
+        <br>
+
+
+        <select id="Alb">
+
+            <option value="1">"YellowSubmarine"</option>
+            <option value="2">"MagicalMysteryTour"</option>
+            <option value="3">"BeatlesforSale"</option>
+            <option value="4">"AbbeyRoad"</option>
+            <option value="5">"the beatles"</option>
+            <option value="6">"help"</option>
+            <option value="7">"revolver"</option>
+
+        </select>
+        <button type="button" onclick="display(document.getElementById('Alb').value);"> Choose </button>
+
+
+
+
+        <br />
+
+        <p class="source">Source: Wikipedia</p>
+
+
+    </form>
+
+
+</body>
+</html>
